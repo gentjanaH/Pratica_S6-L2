@@ -96,12 +96,15 @@
 
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center">
-                    <span id="saldi " class="fw-medium">Saldi</span>
-                    <span class="text-info fw-light" style="font-size: 12px;">Nascondi sezione</span>
+                    <span id="saldi" class="fs-4 fw-medium">Saldi</span>
+                    <button id="hideSec" onclick="hideSection(event)"
+                        class="bnt bg-transparent border-0 text-info fw-light" style="font-size: 12px">Nascondi
+                        sezione</button>
+
                 </div>
             </div>
             <!-- SEZIONE CARD SALDI -->
-            <div class="row g-2 justify-content-center mt-1">
+            <div id="saldiSection" class="row g-2 justify-content-center mt-1">
                 <div class="col col-6 col-md-4 col-lg-3">
                     <div class="card border-info">
                         <img src="./assets/img/images.png" class="card-img-top" alt="foto1">
@@ -160,13 +163,15 @@
             <!-- SEZIONE WELCOME SUMMER -->
             <div class="row">
                 <div class="col-12 mt-3 d-flex justify-content-between align-items-center">
-                    <span id="welcomeSummer" class="fw-medium">Welcome Summer</span>
-                    <span class="text-info fw-light" style="font-size: 12px;">Nascondi sezione</span>
+                    <span id="welcomeSummer" class="fs-4 fw-medium">Welcome Summer</span>
+                    <button id="hideSec" onclick="hideSectionSum(event)"
+                        class="bnt bg-transparent border-0 text-info fw-light" style="font-size: 12px">Nascondi
+                        sezione</button>
                 </div>
             </div>
             <!-- inizio card summer -->
-            <div class="row g-2 justify-content-center mt-1">
-                <div class="col col-6 col-md-4 col-lg-4">
+            <div id="summerSection" class="row g-2 justify-content-center mt-1">
+                <div class="col col-6 col-md-4 col-lg-4 ">
                     <div class="card border-info">
                         <img src="./assets/img/images.png" class="card-img-top" alt="foto1">
                         <div class="card-body">
@@ -182,7 +187,7 @@
                     </div>
                 </div>
                 <div class="col col-6 col-md-4 col-lg-4">
-                    <div class="card border-info">
+                    <div class="card border-info ">
                         <img src="./assets/img/images.png" class="card-img-top" alt="foto2">
                         <div class="card-body">
                             <h5 class="card-title fs-6">Titolo</h5>
@@ -269,7 +274,7 @@
             <!-- OFFERTA DEL GIORNO -->
             <div class="row d-none d-md-block ">
                 <div class="col">
-                    <h5 id="offertaDelGiorno" class="mt-5 mb-2">Offerta del giorno</h5>
+                    <h5 id="offertaDelGiorno" class="fs-4 mt-5 mb-2">Offerta del giorno</h5>
                 </div>
 
 
@@ -292,7 +297,7 @@
 
             <div class="row g-2">
                 <div class="col col-12">
-                    <p id="lastMinute" class="fs-6">Last Minute</p>
+                    <p id="lastMinute" class="fs-4">Last Minute</p>
                 </div>
                 <div class="col col-6 col-md-4 col-lg-2">
                     <img src="./assets/img/images.png" alt="fotoSummer1" class="img-fluid rounded mx-auto d-block">

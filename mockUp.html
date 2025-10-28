@@ -23,6 +23,10 @@
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+
+
+
+
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -30,29 +34,38 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#saldi">Saldi</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lastMinute"> Last Minute</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recensioni"> Recensioni</a>
+                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Novità
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#offertaDelGiorno">Offerta del giorno</a></li>
+                                <li><a class="dropdown-item" href="#welcomeSummer">Welcome Summer</a></li>
+                                <li><a class="dropdown-item" href="#info">Info</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#info"></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    <form class="d-flex" role="button">
+                        <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-danger" type="submit">Cerca</button>
                     </form>
                 </div>
             </div>
@@ -62,28 +75,28 @@
     <main>
         <div class="container">
             <!-- INIZIO CONTAINER -->
-            <div class="row my-3 justify-content-center row-cols-2">
+            <div class="row my-3  ">
                 <!-- prima sezione titolo -->
-                <div class="col col-10 py-3 text-center bg-body-tertiary text-secondary ">
-                    <h3 class="display-4 pb-2 border-bottom border-secondary-subtle">
-                        Eveline-R
-                        <small class="fs-6 text-body-secondary align-middle">-Feel the Freedom</small>
-                    </h3>
-                    <p class="fst-italic">Scopri le destinazioni più calde del momento!</p>
+                <div class="col col-12 py-3  text-secondary ">
+                    <div class="bg-body-tertiary text-center text-lg-start p-lg-3 rounded-3">
+                        <h3 class="display-4 pb-2 border-bottom border-secondary-subtle">
+                            Eveline-R
+                            <small class="fs-6 text-body-secondary align-middle">-Feel the Freedom</small>
+                        </h3>
+                        <p class="fst-italic">Scopri le destinazioni più calde del momento!</p>
 
-                </div>
-                <div class="col col-10 text-center bg-body-tertiary">
-                    <button type="button" class="btn btn-info my-3 px-3 btn-sm text-light fw-medium">Prenota
-                        ora</button>
+                        <button type="button" class="btn btn-info my-3 px-3 btn-sm text-light fw-medium">Prenota
+                            ora</button>
 
+                    </div>
+                    <!-- fine row titolo -->
                 </div>
-                <!-- fine row titolo -->
             </div>
             <!-- sezione saldi -->
 
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center">
-                    <span class="fw-medium">Saldi</span>
+                    <span id="saldi " class="fw-medium">Saldi</span>
                     <span class="text-info fw-light" style="font-size: 12px;">Nascondi sezione</span>
                 </div>
             </div>
@@ -147,7 +160,7 @@
             <!-- SEZIONE WELCOME SUMMER -->
             <div class="row">
                 <div class="col-12 mt-3 d-flex justify-content-between align-items-center">
-                    <span class="fw-medium">Welcome Summer</span>
+                    <span id="welcomeSummer" class="fw-medium">Welcome Summer</span>
                     <span class="text-info fw-light" style="font-size: 12px;">Nascondi sezione</span>
                 </div>
             </div>
@@ -245,16 +258,41 @@
                             <button class=" btn bg-info" style="font-size: 12px;">Prenota</button>
                         </div>
                     </div>
+                    <!-- fine card summer -->
                 </div>
                 <!-- FINE WELCOME SUMMER -->
-                <!-- FINE CONTAINER -->
+
+
             </div>
+
+
             <!-- OFFERTA DEL GIORNO -->
+            <div class="row d-none d-md-block ">
+                <div class="col">
+                    <h5 id="offertaDelGiorno" class="mt-5 mb-2">Offerta del giorno</h5>
+                </div>
+
+
+                <!-- card -->
+                <div class="card mb-4 border-0 d-flex flex-row align-items-start">
+                    <div class="col-6 col-lg-8 p-0">
+                        <img src="./assets/img/images.png" class="img-fluid rounded w-100 h-100 object-fit-cover"
+                            alt="offerta">
+                    </div>
+                    <div class="col-6 col-lg-4 p-3 d-flex flex-column justify-content-center">
+                        <h3 class="card-title fs-2 fw-light">Fuschiraru Maldives</h3>
+                        <p class="card-text text-secondary"><small>15.01.2021-31.01.2021</small></p>
+                        <p class="card-text text-body-secondary">Ville a partire da 500€, non fartele scappare!</p>
+                        <span class="badge rounded-pill text-bg-dark w-25">Best offer!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- fine ooferta del giorno -->
             <!-- LAST MINUTE -->
 
             <div class="row g-2">
                 <div class="col col-12">
-                    <p class="fs-6">Last Minute</p>
+                    <p id="lastMinute" class="fs-6">Last Minute</p>
                 </div>
                 <div class="col col-6 col-md-4 col-lg-2">
                     <img src="./assets/img/images.png" alt="fotoSummer1" class="img-fluid rounded mx-auto d-block">
@@ -277,45 +315,68 @@
                 <!-- FINE LAST MINUTE -->
             </div>
             <!-- DICONO DI NOI -->
-            <div class="row mt-3 text-start">
+            <div class="row mt-3">
                 <div class="col col-12 text-center fw-medium">
-                    <p class="fs-6">Dicono di noi</p>
+                    <p id="recensioni" class="fs-6">Dicono di noi</p>
                 </div>
-                <div class="col-2 text-end">
-                    <i class="bi bi-person border border-info rounded-circle"></i>
+                <!-- testimonianza1 -->
+                <div class="col-12 d-flex align-items-start mb-3">
+                    <div class="rounded-circle bg-secondary-subtle border border-info d-flex justify-content-center align-items-center"
+                        style="width: 50px; height: 50px;">
+                        <i class="bi bi-person text-white fs-4"></i>
+                    </div>
+
+
+                    <div class="ms-3">
+                        <h6 class="fs-6 mb-1">Username</h6>
+                        <p class="mb-0" style="font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-10 ">
-                    <h6 class="fs-6">Username</h6>
-                    <p style="font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
+                <!-- testimonianza 2 -->
+                <div class="col-12 d-flex align-items-start mb-3">
+                    <div class="rounded-circle bg-secondary-subtle border border-info d-flex justify-content-center align-items-center"
+                        style="width: 50px; height: 50px;">
+                        <i class="bi bi-person text-white fs-4"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <h6 class="fs-6 mb-1">Username</h6>
+                        <p class="mb-0" style="font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <!-- testimonianza 3 -->
+                <div class="col-12 d-flex align-items-start mb-3">
+                    <div class="rounded-circle bg-secondary-subtle border border-info d-flex justify-content-center align-items-center"
+                        style="width: 50px; height: 50px;">
+                        <i class="bi bi-person text-white fs-4"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <h6 class="fs-6 mb-1">Username</h6>
+                        <p class="mb-0" style="font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="col-2 text-end">
-                    <i class="bi bi-person border border-info rounded-circle"></i>
-                </div>
-                <div class="col-10">
-                    <h6 class="fs-6">Username</h6>
-                    <p style="font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="col-2 text-end">
-                    <i class="bi bi-person border border-info rounded-circle"></i>
-                </div>
-                <div class="col-10">
-                    <h6 class="fs-6">Username</h6>
-                    <p style="font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
             </div>
-
+            <!-- FINE CONTAINER -->
+        </div>
     </main>
+    <footer id="info" class="bg-dark text-center py-4">
+
+        <button type="button" class="btn btn-sm my-2 border-secondary text-secondary">Contattaci</button>
+        <p><small class="text-light fw-lighter">&copy <span id="year"></span> Kalina Travel LTD. All Rights
+                Reserved.</small></p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
